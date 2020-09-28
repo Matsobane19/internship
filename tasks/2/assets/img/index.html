@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    
+    <title>CyberSecClinique</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["email"].value;
+  if (x == "") {
+    alert("Email must be filled out");
+    return false;
+  }
+}
+</script>
+</head>
+<body>
+    <nav id="myNav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#A">About</a></li>
+            <li><a href="#G">Gallary</a></li>
+            <li><a href="#C">Contact us</a></li>
+          </ul>
+    </nav>
+    
+    <img src="logo-black.png" alt="clinique" width="30%" height="25%">
+      
+
+     <h3 id="A">About</h3>
+     <p>Create a webpage of the Cybersec Clinique Website. It requires knowledge in HTML, CSS and basic javascript. Divide the webpage into multiple sections Home, About, Gallery, Contact Us and The Footer. The idea is for you to create a visually designed single paged website while paying attention to best practices like SEO.</p>
+
+     <br>
+
+     <h3 id="G">Gallary</h3>
+     <div class="gallery">
+     
+          <img src="anony.jpg" alt="anonyF" width="600" height="400">
+        
+        <div class="desc">Anonymous Female </div>
+      </div>
+      
+      <div class="gallery">
+     
+          <img src="anony2.jpg" alt="AnonyM" width="600" height="400">
+        
+        <div class="desc">Anonymous Male </div>
+      </div>
+
+      <br>
+
+      
+     <h3 id="C">Contact Us</h3>
+     
+    </div>
+    <br>
+    <form name="myForm" action="submitted.html" onsubmit="return validateForm()" method="post" id="myForm">
+    <div>
+      <label for="FirstName">Name</label><br>
+      <input type="text" id="name" placeholder="name" name="name" required><br>
+    </div>
+    <br>
+    <div>
+      <label for="email">email:</label><br>
+      <input type="text" id="email" placeholder="email" name="email" ><br>
+    </div>
+  
+    <br>
+    <div>
+      <label for="message">message:</label><br>
+      <textarea id="message" name="message" placeholder="brief message" style="height:200px"></textarea>
+    <br>
+
+      <button >Submit</button>
+    </form>
+    <br>
+
+</body>
+<hr>
+<footer>
+    <div class="copyright" id="copyright">
+        &copy; <script>
+          document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
+        </script> Coded by Kgomotso Mahomela.
+      </div>
+</footer>
