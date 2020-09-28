@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    
+    <title>COVID19 Screening</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["Temp"].value;
+  if (x == "") {
+    alert("Temperature must be filled out");
+    return false;
+  }
+}
+
+</script>
+</head>
+<body>
+
+   
+
+    <h2  style="text-align: center;"> COVID19 Screening Form</h2>
+<div class="container  ">
+    <form name="myForm" action="submitted.html" onsubmit="return validateForm()" method="post" id="myForm">
+        
+        <img src="logo-black.png" alt="clinique" width="30%" height="25%">
+        <h4 class="hed" >How are you feeling today?</h4>
+
+
+  <div>
+    <label for="FirstName">First Name:</label><br>
+    <input type="text" id="Firstname" placeholder="Enter your FirstName" name="FirstName" required><br>
+    <label for="Lastname">Last Name:</label><br>
+    <input type="text" id="Lastname" placeholder="Enter your Lastname" name="LastName" required><br>
+
+  </div>
+  <br>
+  <div>
+    <label for="FirstName">Phone Number:</label><br>
+    <input type="text" id="PhoneNumber" placeholder="eg.0796548025" name="PhoneNumber" required><br>
+  </div>
+  <br>
+  <div>
+    <label for="ID_Number">Id Number:</label><br>
+    <input type="text" id="ID_Number" placeholder="ID_Number" name="PhoneNumber" required><br>
+  </div>
+
+  <br>
+  <div>
+    <label for="Temp">Temperature:</label><br>
+    <input type="text" id="Temp" placeholder="Temperature" name="Temp" ><br>
+  </div>
+
+  <h2>Symptoms</h2>
+  <p>Please select which Symptoms you have experienced</p>
+  
+  <br>
+  <div>
+    <input type="checkbox" id="S1" name="Fever/Chills" value="S1">
+    <label for="S1">Fever/Chills(>37.3 C)</label><br>
+ </div>
+
+ <div>
+    <input type="checkbox" id="S2" name="Coughing" value="S2">
+    <label for="S2">Coughing</label><br>
+ </div>
+
+ <div>
+    <input type="checkbox" id="S3" name="SoreThroat" value="S3">
+    <label for="S3">Sore Throat</label><br>
+ </div>
+ <div>
+    <input type="checkbox" id="S4" name="DifficultyBreathing" value="S4">
+    <label for="S4">Difficulty Breathing</label><br>
+ </div>
+ <div>
+    <input type="checkbox" id="S5" name="Fatigue" value="S5">
+    <label for="S5">Fatigue</label><br>
+ </div>
+ <div>
+    <input type="checkbox" id="S1" name="BodyAches" value="S6">
+    <label for="S6">Body Aches</label><br>
+ </div>
+ <div>
+    <input type="checkbox" id="S7" name="Head_Aches" value="S7">
+    <label for="S7">Head_Aches</label><br>
+ </div>
+ <div>
+    <input type="checkbox" id="S8" name="LossOfTasteAndSmell" value="S8">
+    <label for="S8">Loss Of Taste And Smell</label><br>
+ </div>
+
+ <div>
+    <input type="checkbox" id="S9" name="Nausea_Vomiting_Diarrhea" value="S9">
+    <label for="S9">Nausea/Vomiting/Diarrhea</label><br>
+ </div>
+<div>
+    <p>Have you been in contact with anyone who has since tested positive for Covid-19?</p>
+  
+        <input type="radio" name="yes"> 
+        <label>Yes</label><br>
+        <input type="radio" name="No"> 
+        <label>No</label><br>
+        <input type="radio" name="NotSure"> 
+        <label>NotSure</label><br>
+
+</div>
+
+<div>
+    <p>Have you been in contact with anyone in the last 14 days who is experiencing these symptoms?</p>
+  
+        <input type="radio" name="yes"> 
+        <label>Yes</label><br>
+        <input type="radio" name="No"> 
+        <label>No</label><br>
+     
+
+</div>
+
+
+<div>
+    <p>Have you travelled abroad in the last 1-2 months?</p>
+  
+        <input type="radio" name="yes"> 
+        <label>Yes</label><br>
+        <input type="radio" name="No"> 
+        <label>No</label><br>
+     
+
+</div>
+
+<br>
+>
+     <button class="button">Submit</button>
+</div>
+
+    </form>
+</div>
+
+
+</body>
+</html>
